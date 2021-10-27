@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name" translatable="false">Notification maker</string>
+    <string name="app_package" translatable="false">com.phstudio.notificationmaker</string>
+    <string name="developer_name" translatable="false">PH studio</string>
+    <string name="app_version" translatable="false">2.2</string>
+
+    <string name="about" translatable="false">https://phstudio2.webnode.com/home/</string>
+    <string name="contact" translatable="false">https://phstudio2.webnode.com/contact/</string>
+    <string name="report" translatable="false">https://phstudio2.webnode.com/report-a-bug/</string>
+    <string name="googleplay" translatable="false">https://play.google.com/store/apps/dev?id=5702159986992384861</string>
+    <string name="privacy" translatable="false">https://phstudio2.webnode.com/privacy-policy1/</string>
+    <string name="terms" translatable="false">https://phstudio2.webnode.com/terms-conditions1/</string>
+    <string name="email_text2" translatable="false">https://play.google.com/store/apps/details?id=com.phstudio.notificationmaker</string>
+    <string name="email_text3" translatable="false">https://galaxy.store/maker2</string>
+    <string name="logo" translatable="false">Logo</string>
+
+    <string name="hastag" translatable="false">#</string>
+    <string name="ffff0000" translatable="false">9B9B9B9B</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Exit_app">Exit app</string>
+    <string name="close_app">Do you want to close this application?</string>
+    <string name="label_text">Label text:</string>
+    <string name="title_text">Title text:</string>
+    <string name="big_icon">Big icon:</string>
+    <string name="small_icon">Small icon:</string>
+    <string name="select_time">Now</string>
+    <string name="send_notification">Send notification</string>
+    <string name="create_with_new_id">Create with new ID:</string>
+    <string name="share_mail">Download this great app ;)!</string>
+    <string name="select_email">Share with…</string>
+    <string name="email_text">Hi download Notification maker from PH studio!</string>
+    <string name="Detachable">Detachable:</string>
+    <string name="Time">Display time:</string>
+    <string name="successful">Successfully created</string>
+    <string name="next_notify">Next notify</string>
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    <string name="selectsmall_icon">Select small icon</string>
+    <string name="selectbig_icon">Select big icon</string>
+    <string name="buy">You have only one upcoming alert.</string>
+    <string name="Donthave">You don\'t have any upcoming alerts.</string>
+    <string name="timeclock">Time format</string>
+    <string name="hour12">12-hour clock</string>
+    <string name="hour24">24-hour clock</string>
+    <string name="hour12set">12-hour clock set successfully.</string>
+    <string name="hour24set">24-hour clock set successfully.</string>
+    <string name="selectcolor">Select color</string>
+    <string name="palete">Custom color</string>
+    <string name="defaultColor">Default color</string>
+    <string name="textcolor">Text color:</string>
+    <string name="notsupport">Your system does not support.</string>
+    <string name="error">Something went wrong.</string>
+    <string name="select_picture">Select picture</string>
+    <string name="from_gallery">From gallery</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="default_pic">Default picture</string>
+    <string name="picture">Picture:</string>
+    <string name="notification_with_picture">Notification with picture</string>
+    <string name="notification_with_text">Notification with text</string>
+    <string name="social">Social networks</string>
+    <string name="work">Work</string>
+    <string name="notime">Select time</string>
+    <string name="apply">Apply</string>
+    <string name="lego">Lego avatars</string>
+    <string name="emoji">Emoji</string>
+    <string name="animals">Animals</string>
+    <string name="sport">Sport</string>
+
+    <!-- Dialog layout -->
+    <string name="application_development">Application development</string>
+    <string name="tetxt_about">About</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_bug">Report bug</string>
+    <string name="text_share">Share</string>
+    <string name="text_apps">More apps</string>
+    <string name="text_privacy">Privacy Policy</string>
+    <string name="text_terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="text_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

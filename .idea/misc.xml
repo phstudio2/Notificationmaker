@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/history_button.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/layout_cancel.xml" value="0.2361111111111111" />
+        <entry key="app/src/main/res/drawable/layout_okey.xml" value="0.2361111111111111" />
+        <entry key="app/src/main/res/drawable/layout_sendnotify.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable/layout_style_ic.xml" value="0.2361111111111111" />
+        <entry key="app/src/main/res/layout/activity_bigicon.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_icon.xml" value="0.38425925925925924" />
+        <entry key="app/src/main/res/layout/activity_launch.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_smallicon.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.4046153846153846" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.4046153846153846" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.4046153846153846" />
+        <entry key="app/src/main/res/layout/history_button.xml" value="0.4109375" />
+        <entry key="app/src/main/res/layout/layout_about.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_bug.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_cancel.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_color.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_create.xml" value="0.18055555555555555" />
+        <entry key="app/src/main/res/layout/layout_dialog.xml" value="0.291196388261851" />
+        <entry key="app/src/main/res/layout/layout_next.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_okey.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_picture.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_send.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_sendnotify.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_share.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_spinner.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_style_ic.xml" value="0.15653495440729484" />
+        <entry key="app/src/main/res/layout/layout_text_orange.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_textbckg.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/text_color.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/white_ring.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2212962962962963" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

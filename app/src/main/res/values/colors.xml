@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="defaultColor">#4294db</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF1744</color>
+    <color name="textmain">#666666</color>
+    <color name="line">#b2b2b2</color>
+    <color name="orange">#FF9100</color>
+    <color name="buttonbckg">#F5AB42</color>
+    <color name="line_background">#333333</color>
+    <color name="background2">#FFFFFF</color>
+    <color name="edittext">#E2000000</color>
+    <color name="buttontime">#FFFFFF</color>
+    <color name="line_background2">#333333</color>
+    <color name="colorSelector">#c3c3cd</color>
+    <color name="layoutcolor">#5A5656</color>
+    <color name="Okbutton">#EEEEEE</color>
+    <color name="select">#9B9B9B9B</color>
+
+    <color name="Black">#000000</color>
+    <color name="Red">#FF0000</color>
+    <color name="Lime">#00FF00</color>
+    <color name="Blue">#0000FF</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="Pink">#FF00FF</color>
+    <color name="Gray">#C0C0C0</color>
+    <color name="White">#FFFFFF</color>
+
+    <!-- Dialog layout -->
+    <color name="dialogtext">#E2000000</color>
+    <color name="dialogline">#E2404040</color>
+    <color name="dialogbackground">#FFFFFF</color>
+    <color name="dialogname">#FF000000</color>
+    <color name="fab">#306EFF</color>
+</resources>

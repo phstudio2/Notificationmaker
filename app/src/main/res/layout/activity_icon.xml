@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/abouttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:text="@string/selectbig_icon"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1x"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/abouttext"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+
+
+    <Spinner
+        android:id="@+id/select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1x"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:fontFamily="@font/ubuntu"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView1" />
+
+    <View
+        android:id="@+id/view2x"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="5dp"
+        android:background="@color/orange" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic001" />
+
+            <ImageButton
+                android:id="@+id/icon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic002" />
+
+            <ImageButton
+                android:id="@+id/icon3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic003" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic004" />
+
+            <ImageButton
+                android:id="@+id/icon5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic005" />
+
+            <ImageButton
+                android:id="@+id/icon6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic006" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic007" />
+
+            <ImageButton
+                android:id="@+id/icon8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic008" />
+
+            <ImageButton
+                android:id="@+id/icon9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic009" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic010" />
+
+            <ImageButton
+                android:id="@+id/icon11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic011" />
+
+            <ImageButton
+                android:id="@+id/icon12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic012" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic013" />
+
+            <ImageButton
+                android:id="@+id/icon14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic014" />
+
+            <ImageButton
+                android:id="@+id/icon15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic015" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic016" />
+
+            <ImageButton
+                android:id="@+id/icon17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic017" />
+
+            <ImageButton
+                android:id="@+id/icon18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic018" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic019" />
+
+            <ImageButton
+                android:id="@+id/icon20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic020" />
+
+            <ImageButton
+                android:id="@+id/icon21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic021" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic022" />
+
+            <ImageButton
+                android:id="@+id/icon23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic023" />
+
+            <ImageButton
+                android:id="@+id/icon24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic024" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic025" />
+
+            <ImageButton
+                android:id="@+id/icon26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic026" />
+
+            <ImageButton
+                android:id="@+id/icon27"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic027" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon28"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic028" />
+
+            <ImageButton
+                android:id="@+id/icon29"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic029" />
+
+            <ImageButton
+                android:id="@+id/icon30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic030" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic031" />
+
+            <ImageButton
+                android:id="@+id/icon32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic032" />
+
+            <ImageButton
+                android:id="@+id/icon33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic033" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/icon34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic034" />
+
+            <ImageButton
+                android:id="@+id/icon35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic035" />
+
+            <ImageButton
+                android:id="@+id/icon36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_okey"
+                android:contentDescription="@string/big_icon"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic036" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social001" />
+                <ImageButton
+                    android:id="@+id/social2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social002" />
+                <ImageButton
+                    android:id="@+id/social3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social003" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social004" />
+                <ImageButton
+                    android:id="@+id/social5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social005" />
+                <ImageButton
+                    android:id="@+id/social6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social006" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social007" />
+                <ImageButton
+                    android:id="@+id/social8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social008" />
+                <ImageButton
+                    android:id="@+id/social9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social009" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social010" />
+                <ImageButton
+                    android:id="@+id/social11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social011" />
+                <ImageButton
+                    android:id="@+id/social12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social012" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social013" />
+                <ImageButton
+                    android:id="@+id/social14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social014" />
+                <ImageButton
+                    android:id="@+id/social15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social015" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social016" />
+                <ImageButton
+                    android:id="@+id/social17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social017" />
+                <ImageButton
+                    android:id="@+id/social18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social018" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social019" />
+                <ImageButton
+                    android:id="@+id/social20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social020" />
+                <ImageButton
+                    android:id="@+id/social21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social021" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social022" />
+                <ImageButton
+                    android:id="@+id/social23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social023" />
+                <ImageButton
+                    android:id="@+id/social24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social024" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social025" />
+                <ImageButton
+                    android:id="@+id/social26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social026" />
+                <ImageButton
+                    android:id="@+id/social27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social027" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/social28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social028" />
+                <ImageButton
+                    android:id="@+id/social29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social029" />
+                <ImageButton
+                    android:id="@+id/social30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/social030" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego001" />
+                <ImageButton
+                    android:id="@+id/lego2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego002" />
+                <ImageButton
+                    android:id="@+id/lego3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego003" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego004" />
+                <ImageButton
+                    android:id="@+id/lego5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego005" />
+                <ImageButton
+                    android:id="@+id/lego6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego006" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego007" />
+                <ImageButton
+                    android:id="@+id/lego8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego008" />
+                <ImageButton
+                    android:id="@+id/lego9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego009" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego010" />
+                <ImageButton
+                    android:id="@+id/lego11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego011" />
+                <ImageButton
+                    android:id="@+id/lego12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego012" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego013" />
+                <ImageButton
+                    android:id="@+id/lego14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego014" />
+                <ImageButton
+                    android:id="@+id/lego15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego015" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego016" />
+                <ImageButton
+                    android:id="@+id/lego17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego017" />
+                <ImageButton
+                    android:id="@+id/lego18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego018" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego019" />
+                <ImageButton
+                    android:id="@+id/lego20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego020" />
+                <ImageButton
+                    android:id="@+id/lego21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego021" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego022" />
+                <ImageButton
+                    android:id="@+id/lego23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego023" />
+                <ImageButton
+                    android:id="@+id/lego24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego024" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego025" />
+                <ImageButton
+                    android:id="@+id/lego26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego026" />
+                <ImageButton
+                    android:id="@+id/lego27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego027" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego028" />
+                <ImageButton
+                    android:id="@+id/lego29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego029" />
+                <ImageButton
+                    android:id="@+id/lego30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego030" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego031" />
+                <ImageButton
+                    android:id="@+id/lego32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego032" />
+                <ImageButton
+                    android:id="@+id/lego33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego033" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/lego34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego034" />
+                <ImageButton
+                    android:id="@+id/lego35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego035" />
+                <ImageButton
+                    android:id="@+id/lego36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/lego036" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals001" />
+                <ImageButton
+                    android:id="@+id/animals2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals002" />
+                <ImageButton
+                    android:id="@+id/animals3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals003" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals004" />
+                <ImageButton
+                    android:id="@+id/animals5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals005" />
+                <ImageButton
+                    android:id="@+id/animals6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals006" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals007" />
+                <ImageButton
+                    android:id="@+id/animals8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals008" />
+                <ImageButton
+                    android:id="@+id/animals9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals009" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals010" />
+                <ImageButton
+                    android:id="@+id/animals11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals011" />
+                <ImageButton
+                    android:id="@+id/animals12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals012" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals013" />
+                <ImageButton
+                    android:id="@+id/animals14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals014" />
+                <ImageButton
+                    android:id="@+id/animals15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals015" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals016" />
+                <ImageButton
+                    android:id="@+id/animals17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals017" />
+                <ImageButton
+                    android:id="@+id/animals18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals018" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals019" />
+                <ImageButton
+                    android:id="@+id/animals20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals020" />
+                <ImageButton
+                    android:id="@+id/animals21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals021" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals022" />
+                <ImageButton
+                    android:id="@+id/animals23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals023" />
+                <ImageButton
+                    android:id="@+id/animals24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals024" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals025" />
+                <ImageButton
+                    android:id="@+id/animals26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals026" />
+                <ImageButton
+                    android:id="@+id/animals27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals027" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals028" />
+                <ImageButton
+                    android:id="@+id/animals29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals029" />
+                <ImageButton
+                    android:id="@+id/animals30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals030" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals031" />
+                <ImageButton
+                    android:id="@+id/animals32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals032" />
+                <ImageButton
+                    android:id="@+id/animals33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals033" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/animals34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals034" />
+                <ImageButton
+                    android:id="@+id/animals35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals035" />
+                <ImageButton
+                    android:id="@+id/animals36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/animals036" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport001" />
+                <ImageButton
+                    android:id="@+id/sport2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport002" />
+                <ImageButton
+                    android:id="@+id/sport3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport003" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport004" />
+                <ImageButton
+                    android:id="@+id/sport5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport005" />
+                <ImageButton
+                    android:id="@+id/sport6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport006" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport007" />
+                <ImageButton
+                    android:id="@+id/sport8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport008" />
+                <ImageButton
+                    android:id="@+id/sport9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport009" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport010" />
+                <ImageButton
+                    android:id="@+id/sport11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport011" />
+                <ImageButton
+                    android:id="@+id/sport12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport012" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport013" />
+                <ImageButton
+                    android:id="@+id/sport14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport014" />
+                <ImageButton
+                    android:id="@+id/sport15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport015" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport016" />
+                <ImageButton
+                    android:id="@+id/sport17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport017" />
+                <ImageButton
+                    android:id="@+id/sport18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport018" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport019" />
+                <ImageButton
+                    android:id="@+id/sport20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport020" />
+                <ImageButton
+                    android:id="@+id/sport21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport021" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport022" />
+                <ImageButton
+                    android:id="@+id/sport23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport023" />
+                <ImageButton
+                    android:id="@+id/sport24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport024" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport025" />
+                <ImageButton
+                    android:id="@+id/sport26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport026" />
+                <ImageButton
+                    android:id="@+id/sport27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport027" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport028" />
+                <ImageButton
+                    android:id="@+id/sport29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport029" />
+                <ImageButton
+                    android:id="@+id/sport30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport030" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport031" />
+                <ImageButton
+                    android:id="@+id/sport32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport032" />
+                <ImageButton
+                    android:id="@+id/sport33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport033" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/sport34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport034" />
+                <ImageButton
+                    android:id="@+id/sport35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport035" />
+                <ImageButton
+                    android:id="@+id/sport36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/sport036" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel_button"
+        android:layout_below="@+id/select_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji001" />
+                <ImageButton
+                    android:id="@+id/emoji2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji002" />
+                <ImageButton
+                    android:id="@+id/emoji3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji003" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji004" />
+                <ImageButton
+                    android:id="@+id/emoji5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji005" />
+                <ImageButton
+                    android:id="@+id/emoji6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji006" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji007" />
+                <ImageButton
+                    android:id="@+id/emoji8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji008" />
+                <ImageButton
+                    android:id="@+id/emoji9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji009" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji010" />
+                <ImageButton
+                    android:id="@+id/emoji11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji011" />
+                <ImageButton
+                    android:id="@+id/emoji12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji012" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji013" />
+                <ImageButton
+                    android:id="@+id/emoji14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji014" />
+                <ImageButton
+                    android:id="@+id/emoji15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji015" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji016" />
+                <ImageButton
+                    android:id="@+id/emoji17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji017" />
+                <ImageButton
+                    android:id="@+id/emoji18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji018" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji019" />
+                <ImageButton
+                    android:id="@+id/emoji20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji020" />
+                <ImageButton
+                    android:id="@+id/emoji21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji021" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji022" />
+                <ImageButton
+                    android:id="@+id/emoji23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji023" />
+                <ImageButton
+                    android:id="@+id/emoji24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji024" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji025" />
+                <ImageButton
+                    android:id="@+id/emoji26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji026" />
+                <ImageButton
+                    android:id="@+id/emoji27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji027" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji028" />
+                <ImageButton
+                    android:id="@+id/emoji29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji029" />
+                <ImageButton
+                    android:id="@+id/emoji30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji030" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji031" />
+                <ImageButton
+                    android:id="@+id/emoji32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji032" />
+                <ImageButton
+                    android:id="@+id/emoji33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji033" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageButton
+                    android:id="@+id/emoji34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji034" />
+                <ImageButton
+                    android:id="@+id/emoji35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji035" />
+                <ImageButton
+                    android:id="@+id/emoji36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_okey"
+                    android:contentDescription="@string/big_icon"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/emoji036" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/layout_cancel"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
