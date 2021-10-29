@@ -13,8 +13,8 @@ android {
         applicationId "com.phstudio.notificationmaker"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 5
-        versionName '2.2'
+        versionCode 6
+        versionName '2.3'
         multiDexEnabled true
     }
 

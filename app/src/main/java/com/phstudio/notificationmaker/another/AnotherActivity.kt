@@ -48,7 +48,7 @@ class AnotherActivity : Activity() {
         val next_date = sharedPreferences.getString("next_date", "")
         val color_text2 = sharedPreferences.getInt("color", 0)
         val nextcustom = sharedPreferences.getString("nextWhite", "")
-        val button_style_ok = sharedPreferences.getString("button_style", "")
+        val button_style_ok = sharedPreferences.getString("nextbutton_style", "")
         val notify_color = sharedPreferences.getBoolean("notify_color", true)
         val imagepicture2 = sharedPreferences.getString("nextpicture", "")
 

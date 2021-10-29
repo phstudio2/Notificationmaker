@@ -91,6 +91,7 @@ class ImageActivity : AppCompatActivity() {
         btn_default.setOnClickListener {
             imageUri = BitmapFactory.decodeResource(resources, (pic001))
             editor.putString("picture", "null").apply()
+            back()
         }
     }
 
@@ -201,6 +202,7 @@ class ImageActivity : AppCompatActivity() {
             imageUri = transertoURI
             val yourpic = findViewById<ImageView>(id.yourpic)
             yourpic!!.setImageBitmap(imageUri)
+            saveImage()
         } else {
             Toast.makeText(this, getString(string.error), Toast.LENGTH_SHORT).show()
         }
@@ -241,8 +243,20 @@ class ImageActivity : AppCompatActivity() {
             imageUri!!.compress(Bitmap.CompressFormat.JPEG, 100, stream)
             stream.flush()
             stream.close()
+            back()
         } catch (e: Exception) {
+            back()
         }
+    }
+
+    private fun back() {
+        this@ImageActivity.startActivity(
+            Intent(
+                this@ImageActivity,
+                MainActivity::class.java
+            )
+        )
+        overridePendingTransition(0, 0)
     }
 
     override fun onBackPressed() {

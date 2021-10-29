@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var newIdCheckBox: CheckBox
     lateinit var removeCheckBox: CheckBox
     lateinit var time_btn: Button
+    lateinit var button_style: ToggleButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,8 +79,64 @@ class MainActivity : AppCompatActivity() {
             Context.MODE_PRIVATE
         ).edit()
 
-
         val btn_selectcolor = findViewById<Button>(id.btn_selectcolor)
+        btn_send = findViewById(id.btn_send)
+        text_title = findViewById(id.text_title)
+        text_label = findViewById(id.text_label)
+        newIdCheckBox = findViewById(id.create_new_id_checkbox)
+        removeCheckBox = findViewById(id.remove)
+        time_btn = findViewById(id.time)
+        button_style = findViewById(id.button_style)
+
+        if (sharedPreferences.getString("text_title", "") != null) {
+            text_title.setText(sharedPreferences.getString("text_title", ""))
+        }
+        if (sharedPreferences.getString("text_label", "") != null) {
+            text_label.setText(sharedPreferences.getString("text_label", ""))
+        }
+        if (sharedPreferences.getString("time_btn", "") != null) {
+            time_btn.text = sharedPreferences.getString("time_btn", "")
+            dateTonotify = sharedPreferences.getString("dateTonotify", "")
+            timeTonotify = sharedPreferences.getString("timeTonotify", "")
+            timeselectedbutton = 1
+        } else {
+            time_btn.text = getString(string.select_time)
+            timeselectedbutton = 0
+        }
+        newIdCheckBox.isChecked = sharedPreferences.getBoolean("newIdCheckBox", true)
+        removeCheckBox.isChecked = sharedPreferences.getBoolean("removeCheckBox", true)
+        button_style.isChecked = sharedPreferences.getBoolean("button_style", true)
+
+        val imagepicture = sharedPreferences.getString("picture", "")
+
+        val changepicture = findViewById<ImageButton>(id.changepicture)
+        val view9 = findViewById<View>(id.view9)
+        val picturetext = findViewById<TextView>(id.picturetext)
+
+        if (!button_style.isChecked) {
+            val filenameandress = File(
+                Environment.getExternalStorageDirectory().toString(),
+                getString(string.app_name) + "/${imagepicture}.jpg"
+            )
+            imageUri = if (filenameandress.exists()) {
+                val filename = (File(
+                    Environment.getExternalStorageDirectory().toString(),
+                    getString(string.app_name) + "/${imagepicture}.jpg"
+                )).toString()
+                val bitmap: Bitmap = BitmapFactory.decodeFile(filename)
+                (bitmap)
+            } else {
+                BitmapFactory.decodeResource(resources, (pic001))
+            }
+            view9.visibility = View.VISIBLE
+            picturetext.visibility = View.VISIBLE
+            changepicture.visibility = View.VISIBLE
+            changepicture.setImageBitmap(imageUri)
+        } else {
+            view9.visibility = View.GONE
+            picturetext.visibility = View.GONE
+            changepicture.visibility = View.GONE
+        }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val colored = sharedPreferences.getBoolean("colored", false)
@@ -91,7 +148,6 @@ class MainActivity : AppCompatActivity() {
                 btn_selectcolor.backgroundTintList =
                     ColorStateList.valueOf(resources.getColor(backgroundTintList))
                 color_text = resources.getColor(backgroundTintList)
-
             } else {
                 val White = sharedPreferences.getString("White", "")
                 when (White) {
@@ -116,33 +172,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-        val imagepicture = sharedPreferences.getString("picture", "")
-
-        val filenameandress = File(
-            Environment.getExternalStorageDirectory().toString(),
-            getString(string.app_name) + "/${imagepicture}.jpg"
-        )
-        imageUri = if (filenameandress.exists()) {
-            val filename = (File(
-                Environment.getExternalStorageDirectory().toString(),
-                getString(string.app_name) + "/${imagepicture}.jpg"
-            )).toString()
-            val bitmap: Bitmap = BitmapFactory.decodeFile(filename)
-            (bitmap)
-        } else {
-            BitmapFactory.decodeResource(resources, (pic001))
-        }
-
-        val changepicture = findViewById<ImageButton>(id.changepicture)
-        val button_style = findViewById<ToggleButton>(id.button_style)
-        val view9 = findViewById<View>(id.view9)
-        val picturetext = findViewById<TextView>(id.picturetext)
-        view9.visibility = View.GONE
-        picturetext.visibility = View.GONE
-        changepicture.visibility = View.GONE
-
-        changepicture.setImageBitmap(imageUri)
 
         val small = sharedPreferences.getInt("small", 0)
 
@@ -193,7 +222,6 @@ class MainActivity : AppCompatActivity() {
 
         val fb_dialog = findViewById<FloatingActionButton>(id.fb_dialog)
         fb_dialog.setOnClickListener {
-
             val dialogclass: DialogActivity by lazy {
                 DialogActivity()
             }
@@ -227,25 +255,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         changepicture.setOnClickListener {
+            textbackup()
             val intent = Intent(this@MainActivity, ImageActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
         }
 
-        time_btn = findViewById(id.time)
         time_btn.setOnClickListener {
             timeselectedbutton++
             selectDate()
         }
 
-        btn_send = findViewById(id.btn_send)
-        text_title = findViewById(id.text_title)
-        text_label = findViewById(id.text_label)
-        newIdCheckBox = findViewById(id.create_new_id_checkbox)
-        removeCheckBox = findViewById(id.remove)
-
         btn_selectcolor.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                textbackup()
                 val intent = Intent(this@MainActivity, ColorActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(0, 0)
@@ -255,6 +278,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         selectsmall.setOnClickListener {
+            textbackup()
             val intent = Intent(this@MainActivity, IconActivity::class.java)
             intent.putExtra("size", "small")
             startActivity(intent)
@@ -262,6 +286,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         selectbig.setOnClickListener {
+            textbackup()
             val intent = Intent(this@MainActivity, IconActivity::class.java)
             intent.putExtra("size", "big")
             startActivity(intent)
@@ -301,10 +326,10 @@ class MainActivity : AppCompatActivity() {
 
                 if (button_style.isChecked) {
                     typenotify = "bigtext"
-                    editor.putString("button_style", typenotify).apply()
+                    editor.putString("nextbutton_style", typenotify).apply()
                 } else {
                     typenotify = "picture"
-                    editor.putString("button_style", typenotify).apply()
+                    editor.putString("nextbutton_style", typenotify).apply()
                 }
                 val help_PictureName = sharedPreferences.getString("picture", "")
                 editor.putString("nextpicture", help_PictureName).apply()
@@ -331,10 +356,10 @@ class MainActivity : AppCompatActivity() {
                         notificationChannel.lightColor = color_text
                         notificationChannel.enableVibration(true)
                         notificationManager.createNotificationChannel(notificationChannel)
-                        if (button_style.isChecked) {
-                            typenotify = "bigtext"
+                        typenotify = if (button_style.isChecked) {
+                            "bigtext"
                         } else {
-                            typenotify = "picture"
+                            "picture"
                         }
 
                         if (typenotify == "bigtext") {
@@ -443,6 +468,7 @@ class MainActivity : AppCompatActivity() {
     private fun ToastOkay() {
         val changepicture = findViewById<ImageButton>(id.changepicture)
         val btn_selectcolor = findViewById<Button>(id.btn_selectcolor)
+        textreset()
         text_title.setText("")
         text_label.setText("")
         time_btn.text = (resources.getString(string.select_time))
@@ -468,13 +494,11 @@ class MainActivity : AppCompatActivity() {
     private fun setAlarm() {
         val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(applicationContext, AlarmBroadcast::class.java)
-        val notify_id: Int
-        if (newIdCheckBox.isChecked) {
-            notify_id = notificationId++
+        val notify_id: Int = if (newIdCheckBox.isChecked) {
+            notificationId++
         } else {
-            notify_id = notificationId
+            notificationId
         }
-        val button_style = findViewById<ToggleButton>(id.button_style)
         typenotify = if (button_style.isChecked) {
             "bigtext"
         } else {
@@ -490,7 +514,8 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("color", color_text)
         intent.putExtra("style", typenotify)
 
-        val pendingIntent = PendingIntent.getBroadcast(applicationContext, 0, intent, PendingIntent.FLAG_ONE_SHOT)
+        val pendingIntent =
+            PendingIntent.getBroadcast(applicationContext, 0, intent, PendingIntent.FLAG_ONE_SHOT)
         val dateandtime = "$dateTonotify $timeTonotify"
         val formatter: DateFormat = SimpleDateFormat("d-M-yyyy HH:mm")
         try {
@@ -498,8 +523,34 @@ class MainActivity : AppCompatActivity() {
             am[AlarmManager.RTC_WAKEUP, date1!!.time] = pendingIntent
             ToastOkay()
         } catch (e: ParseException) {
-            e.printStackTrace()
+            Toast.makeText(this, e.printStackTrace().toString(), Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun textbackup() {
+        val editor = getSharedPreferences(
+            resources.getString(string.app_package),
+            Context.MODE_PRIVATE
+        ).edit()
+        editor.putString("text_title", text_title.text.toString()).apply()
+        editor.putString("text_label", text_label.text.toString()).apply()
+        editor.putString("time_btn", time_btn.text.toString()).apply()
+        editor.putBoolean("newIdCheckBox", newIdCheckBox.isChecked).apply()
+        editor.putBoolean("removeCheckBox", removeCheckBox.isChecked).apply()
+        editor.putBoolean("button_style", button_style.isChecked).apply()
+    }
+
+    private fun textreset() {
+        val editor = getSharedPreferences(
+            resources.getString(string.app_package),
+            Context.MODE_PRIVATE
+        ).edit()
+        editor.putString("text_title", null).apply()
+        editor.putString("text_label", null).apply()
+        editor.putString("time_btn", getString(string.select_time)).apply()
+        editor.putBoolean("newIdCheckBox", true).apply()
+        editor.putBoolean("removeCheckBox", true).apply()
+        editor.putBoolean("button_style", true).apply()
     }
 
     private fun selectTime() {
@@ -507,6 +558,10 @@ class MainActivity : AppCompatActivity() {
             resources.getString(string.app_package),
             Context.MODE_PRIVATE
         )
+        val editor = getSharedPreferences(
+            resources.getString(string.app_package),
+            MODE_PRIVATE
+        ).edit()
         val timeformated = sharedPreferences.getString("TimeFormat", "")
         var viewTime = true
         if (timeformated == "10PM") {
@@ -520,6 +575,7 @@ class MainActivity : AppCompatActivity() {
         val timePickerDialog =
             TimePickerDialog(this, { _, i, i1 ->
                 timeTonotify = "$i:$i1"
+                editor.putString("timeTonotify", "$i:$i1").apply()
                 if (viewTime) {
                     formatedtime_time = FormatTime24(i, i1)
                 } else {
@@ -545,6 +601,7 @@ class MainActivity : AppCompatActivity() {
                     MODE_PRIVATE
                 ).edit()
                 editor.putString("next_date", time_btn.text.toString()).apply()
+                editor.putString("dateTonotify", dateTonotify).apply()
             },
             year,
             month,
