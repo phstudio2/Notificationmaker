@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
         if (sharedPreferences.getString("text_label", "") != null) {
             text_label.setText(sharedPreferences.getString("text_label", ""))
         }
-        if (sharedPreferences.getString("time_btn", "") != null) {
+        if (sharedPreferences.getString("time_btn", "") != "") {
             time_btn.text = sharedPreferences.getString("time_btn", "")
             dateTonotify = sharedPreferences.getString("dateTonotify", "")
             timeTonotify = sharedPreferences.getString("timeTonotify", "")
